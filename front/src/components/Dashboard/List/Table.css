@@ -1,0 +1,114 @@
+.dashboard .list .table table{
+    border: 1px solid var(--gray-2);
+    width: 100%;
+    margin-bottom: 2em;
+    border-collapse: separate;
+    border-radius: 4px;
+}
+.dashboard .list .table table thead th{
+    text-align: center;
+}
+.dashboard .list .table table td,
+.dashboard .list .table table th{
+    padding: .7em 1em;
+}
+.dashboard .list .table table tbody{
+    background-color: var(--white-1);
+}
+.dashboard .list .table.orders table tbody{
+    text-align: center;
+}
+.dashboard .list .table table .thumbnail{
+    min-width: 32px;
+}
+.dashboard .list .table table thead span{
+    clip: rect(1px, 1px, 1px, 1px);
+    word-wrap: normal !important;
+    border: 0;
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    overflow-wrap: normal !important;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+}
+.dashboard .list .table table thead .title::first-letter{
+    text-transform: capitalize;
+}
+.dashboard .list .table table tbody td{
+    min-height: 3.25em;
+    border-top: 1px solid var(--gray-2);
+    border: 0;
+}
+.dashboard .list .table table tbody .remove{
+    color: var(--gray-1);
+    cursor: pointer;
+}
+.dashboard .list .table table tbody .thumbnail img{
+    max-width: 70px;
+}
+.dashboard .list .table table tbody .title a{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+.dashboard .list .table table tbody .quantity{
+    text-align: center;
+}
+.dashboard .list .table table tbody .actions .icons-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dashboard .list .table table tbody .actions .icons-wrapper .edit{
+    color: #03cfb7;
+}
+.dashboard .list .table table tbody .actions .icons-wrapper .delete{
+    color: #dc3545;
+}
+.dashboard .list .table.orders table tbody .order-link a{
+    color: var(--blue-2);
+    text-decoration: underline
+}
+.dashboard .list .table.orders table tbody .update-status{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.dashboard .list .table.orders table tbody .update-status.done{
+    color: #dc3545;
+}
+.dashboard .list .table.orders table tbody .update-status.ongoing{
+    color: #03cfb7;
+}
+.dashboard .list .table .page-numbers .numbers{
+    display: flex;
+    padding: 0 0 0 20px;
+    gap: 10px;
+}
+.dashboard .list .table .page-numbers .numbers .number,
+.dashboard .list .table .page-numbers .numbers .arrow{
+    border: 1px solid var(--blue-1);
+    margin: 0 2px 2px 0;
+    padding: 0;
+    overflow: hidden;    
+    height: 100%;
+}
+.dashboard .list .table .page-numbers .numbers .number a,
+.dashboard .list .table .page-numbers .numbers .arrow a{
+    margin: 0;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1em;
+    font-weight: 400;
+    padding: .75em;
+    text-align: center;
+    display: block;
+    min-width: 2.5em;
+    background: var(--white-1);
+    color: var(--blue-2);
+}
+.dashboard .list .table .page-numbers .numbers .number.active a{
+    background: var(--blue-1);
+    color: var(--white-1);
+}

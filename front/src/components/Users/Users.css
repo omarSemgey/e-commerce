@@ -1,0 +1,98 @@
+.users .section{
+    margin-top: 120px;
+}
+.users .section.small{
+    margin-top: 60px !important;
+}
+.users .price{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray-1);
+    text-decoration-color: var(--gray-1);
+    text-decoration-line: line-through;
+    margin-left: 8px;
+}
+.users .sale{
+    font-size: 16px;
+    color: var(--blue-2);
+    font-weight: 500;
+}
+.users .empty{
+    text-align: center !important;
+}
+.users .empty .icon{
+    width: 150px;
+    height: 150px;
+    color: var(--blue-1);
+}
+.users .empty h1{
+    color: var(--blue-2);
+}
+.users .empty p{
+    font-size: 16px;
+    color: var(--gray-1);
+}
+.users .empty button{
+    width: 40%;
+    background-color: var(--blue-2);
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+.users .empty button a{
+    width: 100%;
+    display: inline-block;
+    padding: 14px 8px;
+    font-size: 1rem;
+    color: var(--white-1);
+}
+.users .pop-up{
+    background-color: var(--white-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    transition: opacity .50s, visibility .50s;
+    opacity: 0;
+    visibility: hidden;
+}
+.users .pop-up.active{
+    opacity: 1;
+    visibility: visible;
+}
+.users .pop-up h1{
+    margin-bottom: 10px;
+}
+.users .pop-up p{
+    font-size: 16px;
+    color: var(--gray-1);
+}
+.users .pop-up button{
+    width: 40%;
+    background-color: var(--blue-2);
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+.users .pop-up button a{
+    width: 100%;
+    display: inline-block;
+    padding: 14px 8px;
+    font-size: 1rem;
+    color: var(--white-1);
+}
+.users .pop-up.success h1{
+    color: var(--blue-2);
+}
+.users .pop-up.error h1{
+    color: red;
+}

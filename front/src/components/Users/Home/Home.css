@@ -1,0 +1,38 @@
+.users .home .overview{
+    padding: 0 75px;
+}
+.users .home .overview .title{
+    text-align: left;
+    color: var(--blue-2);
+}
+.users .home .overview .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.users .home .overview .cards .card{
+    width: 20%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    background-color: var(--white-1);
+    color: var(--black-1);
+    border-radius: 16px;
+}
+.users .home .overview .cards .card .card-icon{
+    margin-top: 30px;
+    border-radius: 50%;
+    color: var(--blue-2);
+    width: 30px;
+    height:30px;
+    padding: 15px;
+}
+.users .home .overview .cards .card .card-text{
+    margin-bottom: 30px;
+}
+.users .home .overview .cards .card .card-text .counter{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.users .home .overview .cards .card .card-text span{
+    font-size: 14px;
+    color: var(--gray-1);
+}

@@ -1,0 +1,67 @@
+.users .search-page{
+    text-align: left;
+    padding: 0 75px;
+    overflow: auto;
+    display: none;
+}
+.users .search-page.not-empty .search-header .text .title{
+    color: var(--blue-1);
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+.users .search-page.not-empty .search-header .info{
+    margin-bottom: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.users .search-page.not-empty .search-header .info .count{
+    margin: 0;
+}
+.users .search-page.not-empty .search-header .info .sort{
+    max-width: 200px;
+    width: 100%;
+    padding: .5em;
+    font-size: 1rem;
+    font-family: 'Inter',sans-serif;
+    text-overflow: ellipsis;
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    background-image: url('/public/arrow.svg');
+    background-size: .8em;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+.users .search-page.not-empty .search-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.users .search-page.not-empty .search-wrapper .product{
+    width: 30%;
+    padding: 15px;
+}
+.users .search-page.not-empty .search-wrapper .product a {
+    max-width: 100%;
+}
+.users .search-page.not-empty .search-wrapper .product img{
+    width: 100%;
+    height: 70%;
+    border-radius: 12px;
+}
+.users .search-page.not-empty .search-wrapper .product .main-text{
+    margin: 1em 0 .5em 0;
+    display: block;
+    color: var(--black-1);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.users .search-page.not-empty .search-wrapper .product .main-text:hover{
+    color: var(--blue-2);
+    transition: .3s all;
+}

@@ -1,0 +1,98 @@
+.users .shop .products{
+    padding-left: 60px;
+}
+.users .shop .products .products-header .text .title{
+    color: var(--blue-1);
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+.users .shop .products .products-header .text .secondary-text{
+    margin: 0 0 1em 0;
+}
+.users .shop .products .products-header .info{
+    margin-bottom: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.users .shop .products .products-header .info .count{
+    margin: 0;
+}
+.users .shop .products .products-header .info .sort{
+    max-width: 180px;
+    width: 100%;
+    padding: .5em;
+    font-size: 1rem;
+    font-family: 'Inter',sans-serif;
+    text-overflow: ellipsis;
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    background-image: url('/public/arrow.svg');
+    background-size: .8em;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+.users .shop .products .products-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.users .shop .products .products-wrapper .product{
+    width: 30%;
+    padding: 15px;
+}
+.users .shop .products .products-wrapper .product a {
+    max-width: 100%;
+}
+.users .shop .products .products-wrapper .product img{
+    width: 100%;
+    height: 70%;
+    border-radius: 12px;
+}
+.users .shop .products .products-wrapper .product .main-text{
+    margin: 1em 0 .5em 0;
+    display: block;
+    color: var(--black-1);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.users .shop .products .products-wrapper .product .main-text:hover{
+    color: var(--blue-2);
+    transition: .3s all;
+}
+.users .page-numbers .numbers{
+    display: flex;
+    padding: 0 0 0 20px;
+    gap: 10px;
+}
+.users .page-numbers .numbers .number,
+.users .page-numbers .numbers .arrow{
+    border: 1px solid var(--blue-1);
+    margin: 0 2px 2px 0;
+    padding: 0;
+    overflow: hidden;    
+    height: 100%;
+}
+.users .page-numbers .numbers .number a,
+.users .page-numbers .numbers .arrow a{
+    margin: 0;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1em;
+    font-weight: 400;
+    padding: .75em;
+    text-align: center;
+    display: block;
+    min-width: 2.5em;
+    background: var(--white-1);
+    color: var(--blue-2);
+}
+.users .page-numbers .numbers .number.active a{
+    background: var(--blue-1);
+    color: var(--white-1);
+}
