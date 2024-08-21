@@ -42,4 +42,3 @@ NOTE: you need to install xammp and any editor on your desktop.
 <br><code>php artisan migrate:fresh --seed</code><br>
 7- Start the development server: 
 <br><code>php artisan serve</code><br>
-"# e-commerce" 
