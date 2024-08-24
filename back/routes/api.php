@@ -76,8 +76,8 @@ Route::group([
 //add middlewares
     Route::post('register', [AuthController::class, 'register']);
     Route::post('login', [AuthController::class, 'login']);
-    Route::post('logout', [AuthController::class, 'logout']);
-    Route::post('refresh', [AuthController::class, 'refresh']);
-    Route::post('me', [AuthController::class, 'me']);
+    Route::post('logout', [AuthController::class, 'logout'])->middleware('auth');
+    Route::post('refresh', [AuthController::class, 'refresh'])->middleware('auth');
+    Route::post('me', [AuthController::class, 'me'])->middleware('auth');
 
 });
